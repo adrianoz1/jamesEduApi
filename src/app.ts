@@ -5,6 +5,7 @@ import { ZodError } from 'zod'
 import { env } from '@/env'
 import { usersRoutes } from '@/http/controllers/users/routes'
 import { quizzesRoutes } from './http/controllers/quizzes/routes'
+import { historyRoutes } from './http/controllers/history/routes'
 
 export const app = fastify()
 
@@ -20,7 +21,7 @@ app.register(fastifyJwt, {
 })
 
 app.register(fastifyCookie)
-
+app.register(historyRoutes)
 app.register(usersRoutes)
 app.register(quizzesRoutes)
 

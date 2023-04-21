@@ -13,12 +13,13 @@ enum Role {
 }
 
 model User {
-  id            String   @id @default(uuid())
+  id            String    @id @default(uuid())
   name          String
-  email         String   @unique
+  email         String    @unique
   password_hash String
-  role          Role     @default(MEMBER)
-  created_at    DateTime @default(now())
+  role          Role      @default(MEMBER)
+  created_at    DateTime  @default(now())
+  history       History[]
 
   @@map("users")
 }
@@ -28,6 +29,7 @@ model Quizzes {
   title     String
   level     Int
   questions Questions[]
+  history   History[]
 
   @@map("quizzes")
 }
@@ -50,4 +52,20 @@ model Questions {
   alternatives Alternative[]
 
   @@map("questions")
+}
+
+model History {
+  id        String @id @default(uuid())
+  title     String
+  level     Int
+  points    Int
+  questions Int
+
+  quiz_id String
+  quiz    Quizzes @relation(fields: [quiz_id], references: [id])
+
+  user_id String
+  user    User   @relation(fields: [user_id], references: [id])
+
+  @@map("history")
 }
