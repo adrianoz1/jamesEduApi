@@ -1,4 +1,4 @@
-import { makeGetAllQuizzesUseCase } from '@/use-cases/factories/make-get-all-use-case'
+import { makeGetAllQuizzesUseCase } from '../../../use-cases/factories/make-get-all-use-case'
 import { FastifyReply, FastifyRequest } from 'fastify'
 
 export async function getAll(_: FastifyRequest, reply: FastifyReply) {
