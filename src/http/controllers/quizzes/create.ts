@@ -1,6 +1,6 @@
 import { FastifyReply, FastifyRequest } from 'fastify'
 import { z } from 'zod'
-import { makeCreateQuizUseCase } from '@/use-cases/factories/make-create-quiz-use-case'
+import { makeCreateQuizUseCase } from '../../../use-cases/factories/make-create-quiz-use-case'
 
 export async function create(request: FastifyRequest, reply: FastifyReply) {
   const registerBodySchema = z.object({

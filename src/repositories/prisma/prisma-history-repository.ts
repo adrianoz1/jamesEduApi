@@ -1,4 +1,4 @@
-import { prisma } from '@/lib/prisma'
+import { prisma } from '../../lib/prisma'
 import { Prisma, History } from '@prisma/client'
 
 import { HistoryRepository } from '../history-repository'

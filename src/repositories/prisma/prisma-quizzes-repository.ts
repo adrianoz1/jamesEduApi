@@ -1,4 +1,4 @@
-import { prisma } from '@/lib/prisma'
+import { prisma } from '../../lib/prisma'
 import { Prisma, Quizzes } from '@prisma/client'
 
 import { QuizzesRepository } from '../quizzes-repository'

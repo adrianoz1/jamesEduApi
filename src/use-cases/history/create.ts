@@ -1,8 +1,8 @@
-import { HistoryRepository } from '@/repositories/history-repository'
+import { HistoryRepository } from '../../repositories/history-repository'
 import { CreateHistoryRequest, CreateHistoryRespose } from './types'
-import { UsersRepository } from '@/repositories/users-repository'
+import { UsersRepository } from '../../repositories/users-repository'
 import { UserAlreadyExistsError } from '../errors/user-already-exists-error'
-import { QuizzesRepository } from '@/repositories/quizzes-repository'
+import { QuizzesRepository } from '../../repositories/quizzes-repository'
 import { ResourceNotFoundError } from '../errors/resource-not-found-error'
 
 export class CreateHistoryUseCase {

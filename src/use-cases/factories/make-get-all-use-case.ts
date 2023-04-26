@@ -1,4 +1,4 @@
-import { PrismaQuizzesRepository } from '@/repositories/prisma/prisma-quizzes-repository'
+import { PrismaQuizzesRepository } from '../../repositories/prisma/prisma-quizzes-repository'
 import { GetAllQuizzesUseCase } from '../quiz/get-all'
 
 export function makeGetAllQuizzesUseCase() {

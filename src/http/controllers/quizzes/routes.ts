@@ -1,10 +1,10 @@
 import { FastifyInstance } from 'fastify'
-import { verifyJwt } from '@/http/middlewares/verify-jwt'
+import { verifyJwt } from '../../../http/middlewares/verify-jwt'
 import { create } from './create'
 import { getAll } from './get-all'
 import { get } from './get'
 
-import { verifyUserRole } from '@/http/middlewares/verify-user-role'
+import { verifyUserRole } from '../../../http/middlewares/verify-user-role'
 
 export async function quizzesRoutes(app: FastifyInstance) {
   app.addHook('onRequest', verifyJwt)

@@ -1,6 +1,6 @@
 import { expect, describe, it, beforeEach, vi } from 'vitest'
 import { GetQuizzesUseCase } from '../get'
-import { QuizzesRepository } from '@/repositories/quizzes-repository'
+import { QuizzesRepository } from '../../../repositories/quizzes-repository'
 
 let quizzesRepository: QuizzesRepository
 let sut: GetQuizzesUseCase

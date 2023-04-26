@@ -3,7 +3,7 @@ import fastifyCookie from '@fastify/cookie'
 import fastify from 'fastify'
 import { ZodError } from 'zod'
 import { env } from './env'
-import { usersRoutes } from '@/http/controllers/users/routes'
+import { usersRoutes } from './http/controllers/users/routes'
 import { quizzesRoutes } from './http/controllers/quizzes/routes'
 import { historyRoutes } from './http/controllers/history/routes'
 

@@ -1,4 +1,4 @@
-import { QuizzesRepository } from '@/repositories/quizzes-repository'
+import { QuizzesRepository } from '../../repositories/quizzes-repository'
 import { GetAllQuizUseCaseResponse } from './types'
 
 export class GetAllQuizzesUseCase {

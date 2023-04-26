@@ -1,4 +1,4 @@
-import { makeGetQuizzesUseCase } from '@/use-cases/factories/make-get-use-case'
+import { makeGetQuizzesUseCase } from '../../../use-cases/factories/make-get-use-case'
 import { FastifyReply, FastifyRequest } from 'fastify'
 import { z } from 'zod'
 

@@ -1,6 +1,6 @@
-import { PrismaHistoryRepository } from '@/repositories/prisma/prisma-history-repository'
-import { PrismaUsersRepository } from '@/repositories/prisma/prisma-users-repository'
-import { PrismaQuizzesRepository } from '@/repositories/prisma/prisma-quizzes-repository'
+import { PrismaHistoryRepository } from '../../repositories/prisma/prisma-history-repository'
+import { PrismaUsersRepository } from '../../repositories/prisma/prisma-users-repository'
+import { PrismaQuizzesRepository } from '../../repositories/prisma/prisma-quizzes-repository'
 
 import { CreateHistoryUseCase } from '../history/create'
 
